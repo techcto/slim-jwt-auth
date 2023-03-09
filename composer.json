@@ -1,5 +1,5 @@
 {
-    "name": "tuupola/slim-jwt-auth",
+    "name": "techcto/slim-jwt-auth",
     "description": "PSR-7 and PSR-15 JWT Authentication Middleware",
     "keywords": [
         "psr-7",
@@ -7,7 +7,8 @@
         "middleware",
         "jwt",
         "json",
-        "auth"
+        "auth",
+        "php"
     ],
     "homepage": "https://github.com/tuupola/slim-jwt-auth",
     "license": "MIT",
