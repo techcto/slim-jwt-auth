@@ -280,6 +280,9 @@ final class JwtAuthentication implements MiddlewareInterface
      */
     private function fetchToken(ServerRequestInterface $request): string
     {
+        /* Check for token in session. */
+        if(isset($_SESSION[$this->options["cookie"]])) return $_SESSION[$this->options["cookie"]];
+
         /* Check for token in header. */
         $header = $request->getHeaderLine($this->options["header"]);
 
